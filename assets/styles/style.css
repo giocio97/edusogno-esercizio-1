@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #7ca0c4;
+}
+
+header {
+	height: 100px;
+	background-color: #ffffff;
+    border-bottom: outset 1px ;
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+   /* box-shadow: 5px, 5px #7ca0c4; */
+   
+
+
+}
+
+#logo{
+    height: 80px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/some_SP_Banner-HOME.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    padding-top: 30px;
+}
+ h2{
+    text-align: center;
+    color: rgb(4, 4, 74);
+    padding-top: 40px;
+}
+
+form{
+   
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 10px;
+    max-height: 65%;
+
+}
+
+form > input{
+margin-bottom: 25px;
+border: none;
+border-bottom: solid black 1px;
+padding: 4px;
+}
+
+form > .button{
+    padding: 15px;
+    color: white;
+    background-color: #0057ff;
+    border-radius: 15px;
+    border: none;
+}
+form > p {
+    text-align: center;
+}
