@@ -25,7 +25,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato']!== true){
 
         <?php 
             $emailUser = $_SESSION["email"];
-            $sql_eventi = $sql = "SELECT * FROM `eventi` WHERE `attendees` LIKE \'%$emailUser%\';";
+            $sql_eventi = "SELECT * FROM `eventi` WHERE `attendees` LIKE \'%$emailUser%\';";
             if ($result = $mysqli->query($sql_eventi)){
                 if ($result->num_rows > 0){
                     while($row = $result->fetch_array()){
